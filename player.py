@@ -7,7 +7,11 @@ from turtle import Turtle
 class Player(Turtle):
     def __init__(self):
         super().__init__()
-        self.shape("Turtle")
+        self.shape("turtle")
+        self.penup()
+        self.goto(STARTING_POSITION)
+        self.left(90)
+        
 
 
 

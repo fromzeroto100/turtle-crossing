@@ -5,12 +5,13 @@ from car_manager import CarManager
 from scoreboard import Scoreboard
 
 screen = Screen()
+screen.title("Turtle crossing")
 screen.setup(width=600, height=600)
 screen.tracer(0)
 
 player = Player()
 car_manager = CarManager()
-scoreboard = Scoreboard()
+scoreboard = Scoreboard() 
 
 screen.listen()
 screen.onkey(player.go_up, "Up")
