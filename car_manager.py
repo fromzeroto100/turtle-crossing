@@ -23,3 +23,6 @@ class CarManager(Turtle):
 
 
 
+    def move_cars(self):
+        for car in self.all_cars:
+            car.backward(STARTING_MOVE_DISTANCE)
